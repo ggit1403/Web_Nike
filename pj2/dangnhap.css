@@ -1,0 +1,77 @@
+body {
+    width: 600px;
+    margin: 0 auto; /* Căn giữa trang */
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0 10px; /* Khoảng cách giữa hai logo */
+  }
+
+  .logo img {
+    width: 50px; /* Điều chỉnh kích thước logo tùy ý */
+    height: auto;
+  }
+
+  input {
+    height: 30px;
+    width: 450px;
+    outline: none;
+    border: 1px solid #dadce0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: inherit;
+    color: #202124;
+  }
+
+  .form {
+    position: relative;
+    margin-top: 20px;
+  }
+  h1{
+    font-family: sans-serif;
+  }
+
+  .form input:focus + label,
+  .form input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+  }
+
+  .form label {
+    position: absolute;
+    padding: 0 5px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    transition: top 0.3s, font-size 0.3s, color 0.3s;
+    pointer-events: none;
+  }
+  .text p{
+    color: gray;
+    margin-top: 40px;
+  }
+  .text p a{
+    color: gray;
+  }
+  .btn-container {
+    text-align: right; /* Đưa button về trái */
+    margin-top: 20px;
+    margin-right: 100px; /* Khoảng cách từ button đến các phần tử bên phải */
+  }
+  .btn-container .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }

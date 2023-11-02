@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Nike</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="" height="20px" width="50px">
+        </div>
+        <div class="contact">
+            <ul>
+                <li><a href="">Find a Store</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Join Us</a></li>
+                <a onclick="window.location.href='Dangnhap.html'">Sign In </a>
+            </ul>
+        </div>
+    </header>
+    <nav class="container">
+        <div class="logo-main">
+            <a href="index.html"><img src="images/logo.png" alt="" height="28px" width="100px"></a>
+        </div>
+        <div class="menu-center">
+            <ul>
+                <li><a href="">New & Featured</a>
+                    <ul>
+                        <li><strong>New & Featured</strong></li>
+                        <li><a href="">New Arrival</a></li>
+                        <li><a href="">Laster Clothing</a></li>
+                        <li><a href="">Bestseller</a></li>
+                        <li><a href="">National Team Kits</a></li>
+                        <li><a href="">Member Excusiver</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Men</a>
+                    <ul>
+                        <li><strong>Shoe</strong></li>
+                        <li><a href="">All Shoe</a></li>
+                        <li><a href="">Jordan</a></li>
+                        <li><a href="">Lifestyle</a></li>
+                        <li><a href="">Running</a></li>
+                        <li><a href="">Football</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Women</a>
+                    <ul>
+                        <li><strong>Girl Shoe</strong></li>
+                        <li><a href="">All Clothing</a></li>
+                        <li><a href="">Shorts</a></li>
+                        <li><a href="">Jordan</a></li>
+                        <li><a href="">Older girl</a></li>
+                        <li><a href="">Member Excusiver</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Kids</a>
+                    <ul>
+                        <li><strong>Kids By Age</strong></li>
+                        <li><a href="">Older Kids</a></li>
+                        <li><a href="">Younger Kids</a></li>
+                        <li><a href="">Baby</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Sale</a>
+                    <ul>
+                        <li><strong>New & Featured</strong></li>
+                        <li><a href="">New Arrival</a></li>
+                        <li><a href="">Laster Clothing</a></li>
+                        <li><a href="">Bestseller</a></li>
+                        <li><a href="">National Team Kits</a></li>
+                        <li><a href="">Member Excusiver</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Customise</a></li>
+            </ul>
+        </div>
+        <div class="menu-right">
+            <ul>
+                <li>
+                    <input type="text" placeholder="   Search...">
+                    <i class="bi bi-search"></i>
+                </li>
+                <li><a href=""><i class="bi bi-heart"></i></a></li>
+                <li><a href="cart.html"><i class="bi bi-bag-check"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="title">
+            <div class="title-left">
+                <h1>Run Your Run Clothing (15)</h1>
+            </div>
+            <div class="title-right">
+                <ul>
+                    <button id="hide-show-button" style="border: none; background: none; outline: none; box-shadow: none; font-size: 21px;">Hide Filters</button> <!--<i class="bi bi-credit-card-2-back"></i>-->
+                    <svg viewBox="0 0 22 22" role="img" width="24px" height="24px" fill="none">
+                        <path stroke="currentColor" stroke-width="1.5" d="M21 8.25H10m-5.25 0H3"></path>
+                        <path stroke="currentColor" stroke-width="1.5" d="M7.5 6v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path>
+                        <path stroke="currentColor" stroke-width="1.5" d="M3 15.75h10.75m5 0H21"></path>
+                        <path stroke="currentColor" stroke-width="1.5" d="M16.5 13.5v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path>
+                    </svg>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Lọc -->
+    <aside class="container">
+        <div class="content">
+            <div class="content-left" id="content-left">
+                <ul class="content-left-items">
+                    <li><a href="">Sports Bras</a></li>
+                    <li><a href="">Tops & T-Shirts</a></li>
+                    <li><a href="">Trousers & Tights</a></li>
+                    <li><a href="">Shorts</a></li>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="gender">
+                        <h2><strong>Gender</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item1">
+                        <li><input type="checkbox" id="men-checkbox" onclick="man()"> Men</li>
+                        <li><input type="checkbox" id="women-checkbox" onclick="women()"> Women</li>
+                    </div>
+                </ul>                
+                <!--   -->
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="price">
+                        <h2><strong>Shop Price</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item2">
+                        <li><input type="checkbox" onclick="max_1M()" class="max_1M"> 
+                            Under 1,000,000đ</li>
+                        <li><input type="checkbox" onclick="min_1M()" class="min_1M">
+                            1,000,000₫ - 2,000,000₫</li>
+                        <li><input type="checkbox" onclick="min_2M()"class="min_2M"> 
+                            2,000,001₫ - 4,999,999₫</li>
+                    </div>
+                </ul>
+                <div class="color-items">
+                    <div class="content-left-item" id="colour">
+                        <h2><strong>Colour</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item3">
+                        <li style="font-size: 21px;" class="black"><input id="black" type="checkbox" style="width: 19.40px; height: 19.40px;"> Black</li>
+                        <li style="font-size: 21px;" class="blue"><input id="blue" type="checkbox" style="width: 19.40px; height: 19.40px;"> Blue</li>
+                        <li style="font-size: 21px;" class="pink"><input id="pink" type="checkbox" style="width: 19.40px; height: 19.40px;"> Pink</li>
+                        <li style="font-size: 21px;" class="brown"><input id="brown" type="checkbox" style="width: 19.40px; height: 19.40px;"> Brown</li>
+                    </div>
+                </div>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="fit">
+                        <h2><strong>Fit</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item4">
+                        <li><input type="checkbox" class="outfit_1"> Loose</li>
+                        <li><input type="checkbox" class="outfit_2"> Slim</li>
+                        <li><input type="checkbox" class="outfit_3"> Standard</li>
+                        <li><input type="checkbox" class="outfit_4"> Tight</li>
+                    </div>            
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="brand">
+                        <h2><strong>Brand</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item5">
+                        <li><input type="checkbox" class="brands_1"> Nike Sportswear</li>
+                        <li><input type="checkbox" class="brands_2"> NikeLab</li>
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="sport">
+                        <h2><strong>Sports</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item6">
+                        <li><input type="checkbox" class="sports_1"> Lifestyle</li>
+                        <li><input type="checkbox" class="sports_2"> Running</li>
+                        <li><input type="checkbox" class="sports_3"> Training & Gym</li>
+                        <li><input type="checkbox" class="sports_4"> Basketball</li>
+                        <!--<p style="font-size: 20px;">+More</p>-->
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="studio">
+                        <h2><strong>Studio Classes</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item7">
+                        <li><input type="checkbox" class="studio_1">  Yoga</li>
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="icon">
+                        <h2><strong>Icon</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item8">
+                        <li><input type="checkbox" class="icon_1"> Miler</li>
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="technology">
+                        <h2><strong>Technology</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item9">
+                        <li><input type="checkbox" class="technology_1"> Dri-FIT</li>
+                        <li><input type="checkbox" class="technology_2"> Dri-FIT ADV</li>
+
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="sleeve">
+                        <h2><strong>Sleeve Length</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item10">
+                        <li><input type="checkbox" class="sleeve_1"> Short-Sleeve</li>
+                    </div>
+                </ul>
+
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="neck">
+                        <h2><strong>Neck Style</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item11">
+                        <li><input type="checkbox" class="neckstyle_1"> Scoop Neck</li>
+                        <li><input type="checkbox" class="neckstyle_2"> V-Neck</li>
+                    </div>
+                </ul>
+
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="back">
+                        <h2><strong>Back Type</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item12">
+                        <li><input type="checkbox" class="backtype_1"> Racerback</li>
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="length">
+                        <h2><strong>Length</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item13">
+                        <li><input type="checkbox" class="length"> 7/8-Length</li>
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="rise">
+                        <h2><strong>Rise</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item14">
+                        <li><input type="checkbox" class="rise"> High-Waisted</li>
+                    </div>
+                </ul>
+
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="lined">
+                        <h2><strong>Lined</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item15">
+                        <li><input type="checkbox" class="lined_1"> Lined</li>
+                        <li><input type="checkbox" class="lined_2"> Unlined</li>
+                    </div>                   
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="feature">
+                        <h2><strong>Features</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item16">
+                        <li><input type="checkbox" class="features_1"> Wide Waistband</li>
+                        <li><input type="checkbox" class="features_2"> Flat Seams</li>
+                        <li><input type="checkbox" class="features_3"> Water-resistant</li>
+                        <li><input type="checkbox" class="features_4"> Cord Management</li>
+                        <!--<p style="font-size: 20px;">+More</p>-->
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="best">
+                        <h2><strong>Best For</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item17">
+                        <li><input type="checkbox" class="bestfor_1"> Wet Weather Conditions</li>
+                    </div>
+                </ul>
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="benefit">
+                        <h2><strong>Benefits</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item18">
+                        <li><input type="checkbox" class="benefits_1"> Staying Dry</li>
+                    </div>
+                </ul>
+
+                <ul class="content-left-items">
+                    <div class="content-left-item" id="material">
+                        <h2><strong>Material</strong></h2>
+                        <p><i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div class="content-left-item19">
+                        <li><input type="checkbox" class="material_1"> Sustainable Materials</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="content-right" id="content-right">
+                <div class="product" id="product_1">
+                    <a href=""><img src="images/1.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">1.219.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_2">
+                    <a href=""><img src="images/2.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">1.019.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_3">
+                    <a href=""><img src="images/3.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">2.019.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_4">
+                    <a href=""><img src="images/4.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">999.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_5">
+                    <a href=""><img src="images/5.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">1,019,000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_6">
+                    <a href=""><img src="images/6.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">2.000.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_7">
+                    <a href=""><img src="images/7.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">1.999.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_8">
+                    <a href=""><img src="images/8.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">999.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_9">
+                    <a href=""><img src="images/1.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">5.000.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_10">
+                    <a href=""><img src="images/2.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">3.299.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_11">
+                    <a href=""><img src="images/3.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">1.999.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_12">
+                    <a href=""><img src="images/4.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">4.000.000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_13">
+                    <a href=""><img src="images/5.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">1,019,000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_14">
+                    <a href=""><img src="images/6.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">1,000,000 <sup>đ</sup></span></a>
+                </div>
+                <div class="product" id="product_15">
+                    <a href=""><img src="images/7.webp" alt="" height="350px" width="350px">
+                    <p style="font-size: 19px; color: black; margin-bottom: 10px;">Nike Swoosh Medium-Support</p>
+                    <strong style="color:#9E3500; margin-bottom: 10px; display: block;">Suitainable Materials</strong>
+                    <p style="font-size: 19px; color: #aba9a9dd; margin-bottom: 5px; display: block;">Women's Padded Sports Bra 3 Coulours</p>
+                    <span style="font-size: 21px; color: black;">899.000 <sup>đ</sup></span></a>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <ul>
+                    <li style="font-size: 20px;">FIND A STORE</li>
+                    <li style="font-size: 20px;">BECOME A MEMBER</li>
+                    <li style="font-size: 20px;">SEND US FEEDBACK</li>
+                </ul>
+                <ul>
+                    <li style="font-size: 21px;">GET HELP</li>
+                    <li><a href="">Order Status</a></li>
+                    <li><a href="">Delive</a></li>
+                    <li><a href="">Returns</a></li>
+                    <li><a href="">Payment Options</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li style="font-size: 21px;">ABOUT NIKE</li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Investors</a></li>
+                    <li><a href="">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href=""><i class="bi bi-twitter"></i></a></li>
+                    <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                    <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                    <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footter-bottom">
+            <div class="footer-bottom-left">
+                <li><i class="bi bi-geo-alt-fill"></i> VietNam</li>
+                <li>© 2023 Nike, Inc. All Rights Reserved</li>
+            </div>
+            <div class="footer-bottom-right">
+                <li>Guides</li>
+                <li>Terms of Sale</li>
+                <li>Terms of Use</li>
+                <li>Nike Privacy Policy</li>
+            </div>
+        </div>
+    </footer>
+   <script src="main.js"></script>
+</body>
+</html>

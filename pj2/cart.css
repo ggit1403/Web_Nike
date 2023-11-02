@@ -1,0 +1,67 @@
+.content-left{
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.content-left .shoe img{
+    width: 150px;
+    margin-right: 20px;
+}
+.content-left p{
+    margin-bottom: 10px;
+}
+.content-left h2{
+    margin-bottom: 20px;
+}
+.shoe{
+    display: flex;
+    width: 100%;
+}
+.shoe .cost{
+    display: flex;
+    justify-content: space-between;
+}
+.cost{
+    display: flex;
+}
+.shoe .shoe-content p{
+    padding: 10px 0;
+}
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+.subtotal, .vat, .total{
+    display: flex;
+    justify-content: space-between;
+}
+.guest{
+    background-color: black;
+    padding: 15px;
+    border-radius: 25px;
+}
+.guest h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.member{
+    background-color: black;
+    padding: 15px;
+    border-radius: 25px;
+}
+.member h3{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.vat, .total{
+    border-bottom: 0.5px solid gray;
+}
+.vat p, .total p{
+    padding-bottom: 5px;
+}

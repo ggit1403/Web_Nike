@@ -1,0 +1,437 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.body {
+    width: 1500px;
+    margin: 0 auto; /* Căn giữa trang */
+    padding: 20px;
+  }
+/* jd */
+
+#navbar-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dedede;}
+.logo{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;    
+}
+.logo2{
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+}
+.margin{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#links a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#links a:hover{
+    color: grey;
+}
+#links a:not(:last-child)::after {
+    content: "|";
+    margin: 0 5px;
+    color: black;
+}
+
+/* menu */
+nav{
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-center>ul{
+  display: flex;
+}
+.menu-center>ul>li{
+  list-style: none;
+  margin: 0px 60px 10px 0px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.menu-center>ul>li>a:hover{
+  border-bottom: 2px solid black;
+}
+.menu-center>ul>li>ul>li{
+  list-style: none;
+}
+.menu-center>ul>li>ul>li>a{
+  text-decoration: none;
+  color: #333;
+  margin: 5px 0px 5px 0px;
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+.menu-center>ul>li>ul>li>a:hover{
+  color: #111111;
+  font-weight: bold;
+}
+.menu-center>ul>li>ul{
+  position: absolute;
+  top: 100%;
+  display: none;
+  width: 300px;
+  height: auto;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+.menu-center>ul>li>ul>li>strong{
+  padding: 7px 0px 0px 5px;
+  display: inline-block;
+}
+.menu-center>ul>li:hover ul{
+  display: block;
+}
+.menu-center>ul>li>a{
+  text-decoration: none;
+  color: #333;
+  font-family: helvetica text medium;
+  font-size: 21px;
+  font-weight: bold;
+}
+.menu-right ul{
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  gap: 25px;
+}
+.menu-right ul li{
+  list-style: none;
+  font-size: 15px;
+}
+.menu-right ul li input{
+  height: 30px;
+  width:auto;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #F5F5F5;
+  outline: none;
+}
+.menu-right ul li a{
+  color: #333;
+  font-size: 15px;
+}
+
+
+
+/* BODY */
+
+.back img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  
+  .text {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .fashion {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  .fashion p{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .fashion a{
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .button-container {
+    margin-top: 20px;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #ccc;
+  }
+  .de-text{
+    margin-bottom: -90px;
+
+  }
+
+  .de-text a{
+    font-size: large;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .text1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+  }
+  .text2{
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  /* Đặt kích thước và định dạng cho container chứa ảnh */
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Đặt kích thước và định dạng cho ảnh trong container */
+  .image-container .image-wrapper {
+    position: relative;
+    width: 49%; /* Đặt chiều rộng của container ảnh */
+    height: auto;
+  }
+  .image-container .image-wrapper2 {
+    position: relative;
+    width: 48%; /* Đặt chiều rộng của container ảnh */
+    height: auto;
+    margin-right: 15px; /* Khoảng cách giữa các ảnh */
+  }
+  .image-container .image-wrapper3 {
+    position: relative;
+    width: 100%; /* Đặt chiều rộng của container ảnh */
+    height: auto;
+  }
+  
+  .image-container .image-wrapper:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách với ảnh cuối cùng */
+  }
+  .image-container .image-wrapper2:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách với ảnh cuối cùng */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .image-container .button {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  
+  .image-list-container {
+    width: 100%;
+    overflow-x: scroll;
+    
+  }
+  
+  .image-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .image-list li {
+    margin-right: 20px;
+  }
+  
+  .image-list img {
+    width: 450px;
+    height: 300px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .image-list li:last-child{
+    margin-right: 0;
+  }
+  .image-list li h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .image-list li p {
+    margin: 0;
+    font-size: 15px;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .image-list li a {
+    display: block;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .image-list li a:hover {
+    color: red;
+  }
+  
+
+
+  .slider-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: calc(100% / 4);
+    height: 100%;
+    object-fit: cover;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.slider img:last-child {
+    margin-right: 0;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.slider-controls button {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+}
+
+.slider-controls button:hover {
+    color: black;
+}
+
+
+#footer-box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-box-1 .grey a:hover{
+  color: black;
+}
+#footer-box-1 h4{
+
+  margin: 60px 50px 30px;
+}
+#footer-box-1 a {
+  margin: 0 50px 30px; /* Tương đương với margin-top: 0; margin-right: 50px; margin-bottom: 30px; margin-left: 50px; */
+}
+  
+  
+/* FOOTER */
+#footer-box-2{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  line-height: 3; 
+  position: relative;
+}
+.box-1{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#footer-box-2 .box-1 a{
+  font-size: 12px;
+  font-weight: normal;
+}
+.box-2 img{
+  width: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.grey a {
+  display: block;
+  text-decoration: none;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+#footer-box-2 h4{
+  text-transform: uppercase;
+}
+.footer-text {
+  position: absolute;
+  bottom: 0;
+  margin-left: 50px;
+}
+.footer-text span {
+  margin-right: 20px; /* Khoảng cách giữa các phần tử trong .footer-text */
+}
+.text-right{
+  font-size: 12px;
+  color: gray;
+}
+.footer-text img{
+  width: 20px;
+}
+  
